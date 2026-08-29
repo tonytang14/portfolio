@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Design and Manufacturing II | Engineering Portfolio</title>
+  <link rel="icon" href="../assets/logo.png?v=4" type="image/png">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="has-particle-background has-detail-sidebar">
+  <canvas class="particle-background" aria-hidden="true"></canvas>
+  <div class="site-shell">
+    <header class="top-banner" aria-label="Portfolio navigation">
+      <a class="brand" href="../index.html">Tony Tang</a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="../index.html">About Me</a>
+        <a href="projects.html">Projects</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+        <a
+          class="linkedin-link"
+          href="https://www.linkedin.com/in/tony-tang-002b03328"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Tony Tang on LinkedIn"
+        >
+          <svg class="linkedin-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+        </a>
+      </nav>
+    </header>
+
+    <aside class="detail-section-nav" aria-label="Page sections">
+      <nav>
+        <a href="#overview">Overview</a>
+        <a href="#cnc-milling">CNC Milling</a>
+        <a href="#thermoforming" class="detail-section-nav__multiline">
+          <span>Thermo-</span>
+          <span>forming</span>
+        </a>
+        <a href="#results">Results</a>
+      </nav>
+    </aside>
+
+    <main class="project-detail-main">
+      <section class="project-detail-section project-detail-full" aria-labelledby="project-title">
+        <h1 id="project-title">Design and Manufacturing II: Team Yubba Yubba</h1>
+        <div class="project-hero-photo">
+          <img src="../projects/2.008/final3.webp" alt="Exclusive yo-yo designs">
+        </div>
+        <div class="detail-heading-frame">
+          <h2 id="overview" class="detail-section-heading">Overview</h2>
+        </div>
+        <div class="project-detail-content">
+          <div class="detail-copy">
+            <p>
+              MIT 2.008, Design and Manufacturing II, is a hands-on course
+              focused on modern manufacturing processes and systems, with an
+              emphasis on evaluating production rate, quality, cost, and
+              flexibility. I collaborated with four other students to apply
+              these principles to the design and production of a functional
+              yo-yo. We used processes including CNC machining, injection
+              molding, and thermoforming to manufacture its components. The
+              project connected product design, equipment operation, process
+              control, and system planning to demonstrate how they work together
+              in a real manufacturing environment.
+            </p>
+
+            <p class="detail-subhead">Project goals:</p>
+            <ul>
+              <li>Understand the physical factors that determine production speed and process performance.</li>
+              <li>Measure and reduce variation through process monitoring and control.</li>
+              <li>Identify equipment, material, and system constraints that affect production.</li>
+              <li>Integrate mechanical design, controls, and manufacturing-system planning into a complete working process.</li>
+            </ul>
+          </div>
+          <div class="detail-image-stack" aria-label="Project images">
+            <button
+              type="button"
+              class="image-zoom-trigger"
+              data-zoom-src="../projects/2.008/exploded view.png"
+              data-zoom-alt="Exploded view of the yo-yo assembly"
+              aria-label="Zoom exploded view of the yo-yo assembly"
+            >
+              <img src="../projects/2.008/exploded view.png" alt="Exploded view of the yo-yo assembly">
+              <span class="image-zoom-hint">Click to zoom</span>
+            </button>
+            <img src="../projects/2.008/section analysis.png" alt="Section analysis of the yo-yo body">
+          </div>
+        </div>
+        <div class="detail-heading-frame detail-heading-spaced">
+          <h2 id="cnc-milling" class="detail-section-heading">CNC Milling</h2>
+        </div>
+        <div class="project-detail-content detail-followup">
+          <div class="detail-copy">
+            <p>
+              Our team designed and CNC-milled separate aluminum core and
+              cavity molds for the yo-yo's body and outer ring. We translated
+              the final CAD geometry into manufacturable mold halves, generated
+              the toolpaths, machined the molds, and inspected their fit and
+              surface quality. Below is an example of the CAD model and machining
+              process used to produce the body core.
+            </p>
+          </div>
+          <div class="detail-image-stack">
+            <button
+              type="button"
+              class="image-zoom-trigger"
+              data-zoom-src="../projects/2.008/molds.webp"
+              data-zoom-alt="CNC-milled aluminum core and cavity molds"
+              aria-label="Zoom CNC-milled aluminum molds"
+            >
+              <img src="../projects/2.008/molds.webp" alt="CNC-milled aluminum core and cavity molds">
+              <span class="image-zoom-hint">Click to zoom</span>
+            </button>
+          </div>
+        </div>
+        <div class="detail-media-row" aria-label="CNC milling process media">
+          <img src="../projects/2.008/fusion body.webp" alt="Fusion CAD body model">
+          <img src="../projects/2.008/BodyCNCSteps.webp" alt="Body CNC machining steps">
+          <video src="../projects/2.008/CNC.mp4" controls playsinline aria-label="CNC milling video"></video>
+        </div>
+        <div class="detail-heading-frame detail-heading-spaced">
+          <h2 id="thermoforming" class="detail-section-heading">Thermoforming</h2>
+        </div>
+        <div class="thermo-detail">
+          <div class="detail-copy thermo-copy">
+            <p>
+              Each half of the yo-yo used two thermoformed plastic shells with
+              slightly different diameters, allowing the smaller shell to nest
+              inside the larger one. A vinyl sticker was placed between the two
+              layers, protecting it from scratches and peeling while keeping it
+              clearly visible through the transparent plastic.
+            </p>
+          </div>
+          <div class="detail-media-row" aria-label="Thermoforming media">
+            <img src="../projects/2.008/inner thermo.png" alt="Inner thermoformed shell">
+            <img src="../projects/2.008/outer thermo.png" alt="Outer thermoformed shell">
+            <video src="../projects/2.008/machine thermo.mov" controls playsinline aria-label="Thermoforming machine video"></video>
+          </div>
+        </div>
+        <div class="detail-heading-frame detail-heading-spaced">
+          <h2 id="results" class="detail-section-heading">Results</h2>
+        </div>
+        <div class="project-detail-content results-content">
+          <div class="detail-copy">
+            <p>
+              Our team injection molded 100 yo-yo bodies and 100 rings,
+              produced 100 vinyl stickers, and thermoformed 200 plastic covers
+              to assemble 50 complete yo-yos. We measured the diameters of the
+              molded bodies and rings to calculate the interference of the
+              press fit. Using a nominal interference of 0.03" and the established
+              lower and upper specification limits, 91.1%* of the possible body-and-ring
+              combinations met the dimensional requirements.
+            </p>
+            <p>
+              To verify the strength of the press fit, we randomly selected 10
+              of the 50 completed yo-yos for drop testing. Each yo-yo was
+              dropped from a height of four feet above the ground, and all 10
+              passed without separating.
+            </p>
+            <p class="detail-note">
+              *Note: After producing the required quantity of parts, we manufactured
+              additional parts, resulting in a total of 146 bodies
+              and 138 rings. Because any body could be paired with any
+              ring, the analysis included 20,148 possible combinations.
+            </p>
+          </div>
+          <div class="detail-image-stack results-image-stack" aria-label="Results images">
+            <div class="result-yoyos-frame">
+              <img class="result-yoyos-photo" src="../projects/2.008/50yoyo.webp" alt="Fifty completed yo-yos">
+            </div>
+            <button
+              type="button"
+              class="image-zoom-trigger"
+              data-zoom-src="../projects/2.008/fit chart.png"
+              data-zoom-alt="Press fit measurement chart"
+              aria-label="Zoom press fit measurement chart"
+            >
+              <img src="../projects/2.008/fit chart.png" alt="Press fit measurement chart">
+              <span class="image-zoom-hint">Click to zoom</span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <div class="image-zoom-modal" hidden aria-hidden="true">
+    <div class="image-zoom-backdrop" data-zoom-close></div>
+    <div class="image-zoom-dialog" role="dialog" aria-modal="true" aria-label="Zoomed image">
+      <button type="button" class="image-zoom-close" data-zoom-close aria-label="Close zoomed image">&times;</button>
+      <img class="image-zoom-modal-img" src="" alt="">
+    </div>
+  </div>
+  <script src="../js/particles.js"></script>
+  <script src="../js/image-zoom.js"></script>
+</body>
+</html>

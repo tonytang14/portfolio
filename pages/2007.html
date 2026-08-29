@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Design and Manufacturing I | Engineering Portfolio</title>
+  <link rel="icon" href="../assets/logo.png?v=4" type="image/png">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="has-particle-background has-detail-sidebar">
+  <canvas class="particle-background" aria-hidden="true"></canvas>
+  <div class="site-shell">
+    <header class="top-banner" aria-label="Portfolio navigation">
+      <a class="brand" href="../index.html">Tony Tang</a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="../index.html">About Me</a>
+        <a href="projects.html">Projects</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+        <a
+          class="linkedin-link"
+          href="https://www.linkedin.com/in/tony-tang-002b03328"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Tony Tang on LinkedIn"
+        >
+          <svg class="linkedin-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+        </a>
+      </nav>
+    </header>
+
+    <aside class="detail-section-nav" aria-label="Page sections">
+      <nav>
+        <a href="#overview">Overview</a>
+        <a href="#strategies-and-concepts" class="detail-section-nav__multiline">
+          <span>Strategies &amp;</span>
+          <span>Concepts</span>
+        </a>
+        <a href="#modules">Modules</a>
+        <a href="#results">Results</a>
+      </nav>
+    </aside>
+
+    <main class="project-detail-main">
+      <section class="project-detail-section project-detail-full" aria-labelledby="project-title">
+        <h1 id="project-title">Design and Manufacturing I</h1>
+        <div class="project-hero-photo project-hero-photo--compact">
+          <img src="../projects/2.007/final close.png" alt="Final closed view of the 2.007 robot">
+        </div>
+        <div class="detail-heading-frame">
+          <h2 id="overview" class="detail-section-heading">Overview</h2>
+        </div>
+        <div class="project-detail-content">
+          <div class="detail-copy">
+            <p>
+              Design and Manufacturing I teaches how to think and work like a design
+              engineer by combining analysis, experimentation, measurement, and
+              synthesis. The course builds both technical competence and confidence
+              through a semester-long robot design challenge, with this year's
+              competition themed around the musical Wicked. It develops skills in
+              idea generation, estimation, concept selection, visual thinking,
+              computer-aided design (CAD), mechanism design, machine elements, basic
+              electronics, technical communication, and engineering ethics. The
+              project requires taking real-world measurements to establish design
+              requirements, analyzing those requirements to determine effective
+              design features, and ultimately fabricating and testing a robot that
+              competes to score points.
+            </p>
+
+            <p class="detail-subhead">Project goals:</p>
+            <ul>
+              <li>Prototype, test concepts, and iterate to improve performance, reliability, and overall design.</li>
+              <li>Generate, compare, and evaluate multiple design strategies and concepts and translate them into functional mechanisms.</li>
+              <li>Manage the design process within time, budget, material, and technical constraints.</li>
+            </ul>
+          </div>
+          <div class="detail-image-stack" aria-label="Project images">
+            <img src="../projects/2.007/design.png" alt="Design process flowchart from requirements to robot">
+          </div>
+        </div>
+        <div class="detail-heading-frame detail-heading-spaced">
+          <h2 id="strategies-and-concepts" class="detail-section-heading">Strategies and Concepts</h2>
+        </div>
+        <div class="project-detail-content detail-followup">
+          <div class="detail-copy">
+            <p>
+              Points are scored on a two-level game board, with the robot completing
+              different tasks to earn points. Each task is worth a different number of
+              points, as detailed in the rulebook. After evaluating several strategies
+              using a Pugh chart, I chose to focus on pulling the head and flipping the
+              levers. This approach offered the greatest scoring potential while
+              minimizing the complexity of the mechanisms required, with an estimated
+              total score of 374 points. I then developed multiple concepts for the
+              head-pulling and lever-flipping mechanism and used another Pugh chart to
+              select Concept 3*, which uses a hook to grab the head and a latch system
+              to engage the levers.
+            </p>
+
+            <p class="detail-note">
+              *Note: I later simplified the design by moving the robot itself rather
+              than using a cam-and-follower mechanism. This approach was easier to
+              fabricate and reduced the overall complexity of the system.
+            </p>
+          </div>
+          <div class="detail-image-stack" aria-label="Strategies and concepts media">
+            <div class="game-board-frame">
+              <img src="../projects/2.007/game board.png" alt="Two-level Wicked-themed 2.007 competition game board">
+            </div>
+            <a
+              class="detail-download-link"
+              href="../projects/2.007/2.007 Contest Rules Spring 2025 V4.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Contest Rules
+            </a>
+          </div>
+        </div>
+        <div class="detail-pdf-row" aria-label="Strategy and concept Pugh charts">
+          <figure class="detail-pdf-panel">
+            <figcaption class="detail-pdf-label">Strategy</figcaption>
+            <div class="pdf-embed-wrap">
+              <iframe src="../projects/2.007/strategy.pdf#navpanes=0&view=FitH&page=1" title="Strategy Pugh chart" loading="lazy" scrolling="no"></iframe>
+              <button
+                type="button"
+                class="pdf-zoom-trigger"
+                data-pdf-src="../projects/2.007/strategy.pdf"
+                data-pdf-title="Strategy Pugh chart"
+                aria-label="View Strategy PDF fullscreen"
+              >
+                Click to zoom
+              </button>
+            </div>
+          </figure>
+          <figure class="detail-pdf-panel">
+            <figcaption class="detail-pdf-label">Concept</figcaption>
+            <div class="pdf-embed-wrap">
+              <iframe src="../projects/2.007/concept.pdf#navpanes=0&view=FitH&page=1" title="Concept Pugh chart" loading="lazy" scrolling="no"></iframe>
+              <button
+                type="button"
+                class="pdf-zoom-trigger"
+                data-pdf-src="../projects/2.007/concept.pdf"
+                data-pdf-title="Concept Pugh chart"
+                aria-label="View Concept PDF fullscreen"
+              >
+                Click to zoom
+              </button>
+            </div>
+          </figure>
+        </div>
+        <div class="detail-heading-frame detail-heading-spaced">
+          <h2 id="modules" class="detail-section-heading">Modules</h2>
+        </div>
+        <div class="detail-copy thermo-copy">
+          <p>
+            The most critical module (MCM) was the lever-flipping mechanism, since it
+            was the robot's primary means of scoring points. I selected a
+            carabiner-style mechanism that allowed each lever to enter the module
+            while preventing it from slipping back out. Based on the design
+            requirements, the mechanism required a torsion spring with a spring
+            constant of approximately 0.0073 Nm/rad, providing enough compliance for
+            the lever to latch into the gap while still allowing the gate to close
+            afterward.
+          </p>
+          <p>
+            To minimize the weight of the cantilevered MCM, acrylic sheet and Delrin
+            were used for its structure. Because the robot needed to repeatedly move
+            back and forth while using the MCM to actuate the levers, calculations
+            indicated that it should be capable of traveling faster than 0.7 m/s.
+            Based on this requirement, I selected 25:3 speed servo motors to drive
+            the robot's wheels.
+          </p>
+          <p>
+            Although not shown here, bevel gears were used to rotate the MCM because
+            one end of the module functions as a pulley while the opposite end contains
+            the carabiner mechanisms. The robot also had to fit within the initial
+            12×12×16 in. starting volume, so the carabiners were stored 180° from their
+            active orientation and rotated into position after the match began.
+          </p>
+        </div>
+        <div class="mcm-media-grid" aria-label="MCM module media">
+          <div class="mcm-media-pdf">
+            <div class="pdf-embed-wrap">
+              <iframe src="../projects/2.007/MCM.pdf#navpanes=0&view=FitH&page=1" title="MCM design notes" loading="lazy" scrolling="no"></iframe>
+              <button
+                type="button"
+                class="pdf-zoom-trigger"
+                data-pdf-src="../projects/2.007/MCM.pdf"
+                data-pdf-title="MCM design notes"
+                aria-label="View MCM PDF fullscreen"
+              >
+                Click to zoom
+              </button>
+            </div>
+          </div>
+          <div class="mcm-media-stack">
+            <div class="video-media-frame">
+              <video src="../projects/2.007/MCM.mp4" controls playsinline aria-label="MCM mechanism video"></video>
+            </div>
+            <img src="../projects/2.007/MCM.png" alt="Most critical module lever-flipping mechanism">
+          </div>
+        </div>
+        <div class="detail-copy thermo-copy">
+          <p>
+            To pull the Oz head, I designed a winch-and-hook mechanism that allows the
+            robot to engage the head from underneath. Using the known coefficient of
+            friction between the wheels and the game board, I calculated that the robot
+            needed to weigh at least 1.27 kg to prevent it from being pulled backward
+            during operation. I also used three hooks instead of one to increase the
+            likelihood of engaging the hole in the Oz head, since precise alignment was
+            difficult.
+          </p>
+        </div>
+        <div class="pdf-video-grid" aria-label="Hook mechanism media">
+          <div class="pdf-video-grid__pdf">
+            <div class="pdf-embed-wrap">
+              <iframe src="../projects/2.007/Hook.pdf#navpanes=0&view=FitH&page=1" title="Hook mechanism design notes" loading="lazy" scrolling="no"></iframe>
+              <button
+                type="button"
+                class="pdf-zoom-trigger"
+                data-pdf-src="../projects/2.007/Hook.pdf"
+                data-pdf-title="Hook mechanism design notes"
+                aria-label="View Hook PDF fullscreen"
+              >
+                Click to zoom
+              </button>
+            </div>
+          </div>
+          <div class="pdf-video-grid__video">
+            <div class="video-media-frame">
+              <video src="../projects/2.007/Hook.mp4" controls playsinline aria-label="Hook mechanism video"></video>
+            </div>
+          </div>
+        </div>
+        <div class="detail-heading-frame detail-heading-spaced">
+          <h2 id="results" class="detail-section-heading">Results</h2>
+        </div>
+        <div class="project-detail-content detail-followup">
+          <div class="detail-copy">
+            <p>
+              My robot competed against other designs across multiple rounds and
+              ultimately placed 4th out of 140 students. Its highest score was 392
+              points, closely matching the 376-point estimate developed during the
+              strategy-generation phase. I was also awarded the Magic Broom Prize,
+              which recognizes the speediest or most nimble robot in the competition.
+            </p>
+          </div>
+          <div class="detail-image-stack" aria-label="Results images">
+            <img src="../projects/2.007/trophy.png" alt="Magic Broom Prize trophy">
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <div class="pdf-zoom-modal" hidden aria-hidden="true">
+    <div class="pdf-zoom-backdrop" data-pdf-close></div>
+    <div class="pdf-zoom-dialog" role="dialog" aria-modal="true" aria-label="Fullscreen PDF">
+      <button type="button" class="pdf-zoom-close" data-pdf-close aria-label="Close fullscreen PDF">&times;</button>
+      <iframe class="pdf-zoom-modal-frame" src="" title=""></iframe>
+    </div>
+  </div>
+  <script src="../js/particles.js"></script>
+  <script src="../js/pdf-zoom.js"></script>
+</body>
+</html>

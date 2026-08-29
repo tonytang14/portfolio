@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Measurements and Instrumentation | Engineering Portfolio</title>
+  <link rel="icon" href="../assets/logo.png?v=4" type="image/png">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="has-particle-background">
+  <canvas class="particle-background" aria-hidden="true"></canvas>
+  <div class="site-shell">
+    <header class="top-banner" aria-label="Portfolio navigation">
+      <a class="brand" href="../index.html">Tony Tang</a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="../index.html">About Me</a>
+        <a href="projects.html">Projects</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+        <a
+          class="linkedin-link"
+          href="https://www.linkedin.com/in/tony-tang-002b03328"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Tony Tang on LinkedIn"
+        >
+          <svg class="linkedin-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+        </a>
+      </nav>
+    </header>
+
+    <main class="project-detail-main">
+      <section class="project-detail-section project-detail-full" aria-labelledby="project-title">
+        <h1 id="project-title">Measurement and Instrumentation</h1>
+        <div class="detail-heading-frame">
+          <h2 id="overview" class="detail-section-heading">Overview</h2>
+        </div>
+        <div class="sintef-overview">
+          <div class="detail-copy thermo-copy">
+            <p>
+              For my Measurement and Instrumentation class, I investigated how
+              bench press grip width affects muscle activation in the chest,
+              shoulders, and triceps. Because greater muscle activation is
+              generally associated with increased muscular engagement and potential
+              strength development, I wanted to determine whether changing grip
+              width could be used to target specific muscle groups. For the
+              experiment, I used non-invasive surface EMG sensors placed on the
+              skin to measure muscle activity. Logger Pro was used as the data
+              acquisition system, and MATLAB was used to process and analyze the
+              collected data. The results showed that increasing the grip width
+              from 15 cm to 85 cm produced a 133% increase in chest muscle
+              activation, while shoulder and triceps activation decreased by 25%
+              and 73%, respectively. These findings suggest that a wider grip
+              places greater emphasis on the chest, while a narrower grip increases
+              the relative involvement of the shoulders and triceps.
+            </p>
+          </div>
+          <div class="sintef-media-stack" aria-label="Bench press poster and final paper">
+            <figure class="detail-poster-panel">
+              <div class="pdf-embed-wrap detail-poster-embed">
+                <iframe
+                  src="../projects/2.671/T_13_Tang_BenchPress.pdf#navpanes=0&toolbar=0&view=Fit&page=1"
+                  title="Bench press grip distance effect on muscle activation poster"
+                  loading="lazy"
+                  scrolling="no"
+                ></iframe>
+                <button
+                  type="button"
+                  class="pdf-zoom-trigger"
+                  data-pdf-src="../projects/2.671/T_13_Tang_BenchPress.pdf"
+                  data-pdf-title="Bench press EMG poster"
+                  aria-label="View bench press poster fullscreen"
+                >
+                  Click to zoom
+                </button>
+              </div>
+            </figure>
+            <div class="sintef-pdf-panel">
+              <div class="pdf-embed-wrap sintef-pdf-embed">
+                <iframe
+                  src="../projects/2.671/Tang_Tony_FinalPaper.pdf#navpanes=0&view=Fit&page=1"
+                  title="Measurements and Instrumentation final paper"
+                  loading="lazy"
+                  scrolling="no"
+                ></iframe>
+                <button
+                  type="button"
+                  class="pdf-zoom-trigger"
+                  data-pdf-src="../projects/2.671/Tang_Tony_FinalPaper.pdf"
+                  data-pdf-title="Measurements and Instrumentation final paper"
+                  aria-label="View final paper fullscreen"
+                >
+                  Click to zoom
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <div class="pdf-zoom-modal" hidden aria-hidden="true">
+    <div class="pdf-zoom-backdrop" data-pdf-close></div>
+    <div class="pdf-zoom-dialog" role="dialog" aria-modal="true" aria-label="Fullscreen PDF">
+      <button type="button" class="pdf-zoom-close" data-pdf-close aria-label="Close fullscreen PDF">&times;</button>
+      <iframe class="pdf-zoom-modal-frame" src="" title=""></iframe>
+    </div>
+  </div>
+  <script src="../js/particles.js"></script>
+  <script src="../js/pdf-zoom.js"></script>
+</body>
+</html>
