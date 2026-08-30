@@ -6,17 +6,17 @@
 
   if (!modal || !modalFrame || !triggers.length) return;
 
-  const PDF_PARAMS = "#navpanes=0&toolbar=0&view=FitH&page=1";
+  const DESKTOP_PDF_PARAMS = "#page=1&view=FitH&navpanes=0";
   let lastFocusedElement = null;
 
   function openModal(src, title) {
     if (window.matchMedia("(max-width: 1100px)").matches) {
-      window.open(`${src.split("#")[0]}${PDF_PARAMS}`, "_blank", "noopener,noreferrer");
+      window.open(src.split("#")[0], "_blank", "noopener,noreferrer");
       return;
     }
 
     lastFocusedElement = document.activeElement;
-    modalFrame.src = `${src}${PDF_PARAMS}`;
+    modalFrame.src = `${src.split("#")[0]}${DESKTOP_PDF_PARAMS}`;
     modalFrame.title = title;
     if (modalDialog) {
       modalDialog.setAttribute("aria-label", title);
