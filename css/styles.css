@@ -524,9 +524,11 @@ main {
   transition: transform 320ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.project-card:hover .project-overlay,
-.project-card:focus-within .project-overlay {
-  transform: translateY(0);
+@media (hover: hover) {
+  .project-card:hover .project-overlay,
+  .project-card:focus-within .project-overlay {
+    transform: translateY(0);
+  }
 }
 
 .project-body {
@@ -1472,6 +1474,7 @@ main {
   scroll-margin-top: 128px;
   animation: fade-rise 820ms ease 180ms both;
   container-type: inline-size;
+  overflow-x: clip;
 }
 
 .resume-section .section-header {
@@ -1962,6 +1965,21 @@ main {
     width: calc(100% - (var(--page-gutter) * 2));
   }
 
+  .resume-pdf-panel {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .resume-pdf-embed {
+    height: calc(100cqw * 11 / 8.5);
+  }
+
+  .resume-pdf-embed iframe {
+    width: 100%;
+    max-width: 100%;
+  }
+
   .contact-submit {
     width: 100%;
     justify-self: stretch;
@@ -1995,17 +2013,6 @@ main {
 }
 
 @media (max-width: 680px), (hover: none) and (pointer: coarse) {
-  .project-overlay {
-    transform: translateY(0);
-    height: auto;
-    max-height: 58%;
-    top: auto;
-  }
-
-  .project-body {
-    justify-content: flex-end;
-  }
-
   .pdf-embed-wrap .pdf-zoom-trigger,
   .image-zoom-trigger .image-zoom-hint {
     opacity: 1;
