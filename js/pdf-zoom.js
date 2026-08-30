@@ -6,10 +6,15 @@
 
   if (!modal || !modalFrame || !triggers.length) return;
 
-  const PDF_PARAMS = "#navpanes=0&view=FitH&page=1";
+  const PDF_PARAMS = "#navpanes=0&toolbar=0&view=FitH&page=1";
   let lastFocusedElement = null;
 
   function openModal(src, title) {
+    if (window.matchMedia("(max-width: 1100px)").matches) {
+      window.open(`${src.split("#")[0]}${PDF_PARAMS}`, "_blank", "noopener,noreferrer");
+      return;
+    }
+
     lastFocusedElement = document.activeElement;
     modalFrame.src = `${src}${PDF_PARAMS}`;
     modalFrame.title = title;
