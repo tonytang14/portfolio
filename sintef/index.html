@@ -101,5 +101,10 @@
   <script src="../js/particles.js"></script>
   <script src="../js/pdf-embed.js"></script>
   <script src="../js/pdf-zoom.js"></script>
+  <script>
+    if (window.location.pathname.endsWith("/index.html")) {
+      window.history.replaceState(null, "", window.location.pathname.slice(0, -"/index.html".length) + "/");
+    }
+  </script>
 </body>
 </html>

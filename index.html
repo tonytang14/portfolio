@@ -56,8 +56,8 @@
   </div>
   <script src="js/particles.js"></script>
   <script>
-    if (window.location.pathname === "/index.html") {
-      window.history.replaceState(null, "", "/");
+    if (window.location.pathname.endsWith("/index.html")) {
+      window.history.replaceState(null, "", window.location.pathname.slice(0, -"/index.html".length) + "/");
     }
   </script>
 </body>
